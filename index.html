@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Forms</title>
+</head>
+    <body>
+        <h1>What Instrument is for you?</h1>
+        <form>
+            <p>Your Email:
+                <input type="email" id="email" name="email" size="13"
+                maxlength="30" />
+            </p>
+        </form>
+        <form>
+            <label for="date">Today's Date</label>
+            <input type="date" id="date" name="today's date">
+        </form>
+        <form id="Genres">
+            <p>Pick your favorite Genre(s)</p>
+            <input type="checkbox" id="rock" name="genre" value="rock"
+            checked="checked" /> Rock
+
+            <input type="checkbox" id="jazz" name="genre" value="jazz"
+            checked="checked" /> Jazz
+            
+            <input type="checkbox" id="indie" name="genre" value="indie"
+            checked="checked" /> Indie
+
+            <input type="checkbox" id="punk" name="genre" value="punk"
+            checked="checked" /> Punk
+        </form>
+        
+        <form id="Instruments">
+            <p>If you had to choose an Instrument</p>
+            <input type="radio" id="guitar" name="Instrument" value="guitar"
+            checked="checked" /> Guitar
+
+            <input type="radio" id="drums" name="Instrument" value="drums"
+            checked="checked" /> Drums
+            
+            <input type="radio" id="bass" name="Instrument" value="bass"
+            checked="checked" /> Bass
+
+            <input type="radio" id="triangle" name="Instrument" value="triangle"
+            checked="checked" /> Triangle
+        </form>
+
+        <form>
+            <p>Briefly Describe your favorite aspect of music </p>
+            <textarea name="comments" cols="20" rows="5">Favorite Parts of Music...</textarea>
+        </form>
+        <div>
+            <button onclick="sendIdea()">Send your ideas to us</button> 
+        </div>
+
+        <div id="storage">
+            <p id="output"></p>
+        </div>
+
+        <script src="Index.js"></script>
+    </body>
