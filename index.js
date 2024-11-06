@@ -15,10 +15,15 @@ function sendIdea() {
         else if (document.getElementById("drums").checked) instrument.push = "Drums";
         else if (document.getElementById("bass").checked) instrument.push = "Bass";
         else if (document.getElementById("triangle").checked) instrument.push = "Triangle";
-        
 
-    // Display the output in the storage section
-    document.getElementById("output").innerHTML = output;
+    //object for formData//
+    const formData = {
+        email: email,
+        date: date,
+        genres: genres,
+        instrument: instrument,
+        comments: comments
+        };
 
 
 event.preventDefault()
